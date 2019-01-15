@@ -65,22 +65,24 @@
       </div>
     </nav>
 
+    <!-- INTRO -->
+
     <!-- SHOWCASE -->
     <section id="showcase">
       <div class="primary-overlay">
         <div class="container">
           <div class="row m-auto text-center font-weight-bold">
             <div class="col-sm-12 align-middle">
-              <div class="lead text-large fadeInLeft">Hello, my Name is</div>
-              <div class="display-2 fadeInLeft">Jason MacCuaig</div>
-              <div class="mt-4 lead text-large fadeInRight">
-                Technical Accountant
+                    <div class="display-4 text-large mt-4">
+                      <span id="typedHeader1" class="h1"></span>
+                      <div id="headerArea">
+
+                      </div>
+                    </div>
               </div>
-              <div class="mt-2 lead fadeInRight">London, ON, Canada</div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- ABOUT ME -->
@@ -145,11 +147,12 @@
           <div class="col-lg-4 col-md-6">
             <div
               class="card text-dark border border-dark shadow shadow-dark my-5"
+              id="card1"
             >
               <div class="card-header text-center py-4">
                 <i class="fas fa-chart-area fa-5x"></i>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Data Analytics</h4>
                 <p class="card-text">
                   Data analytics is about more then just building reports for
@@ -157,17 +160,21 @@
                   your data means, and providing proper insight into your
                   business operations.
                 </p>
-              </div>
-              <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
-                  >Learn More</a
-                >
+                <div class="p-3 my-auto">
+                  <button
+                    class="btn btn-outline-primary btn-block text-left"
+                    data-toggle="modal"
+                    data-target="#data-modal"
+                    >Learn More</button
+                  >
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div
               class="card text-dark border border-dark shadow shadow-dark my-5"
+              id="card2"
             >
               <div class="card-header text-center py-4">
                 <i class="fas fa-calculator fa-5x"></i>
@@ -182,7 +189,9 @@
                 </p>
               </div>
               <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
+                <a class="btn btn-outline-primary btn-block text-left"
+                data-toggle="modal"
+                data-target="#data-modal-2"
                   >Learn More</a
                 >
               </div>
@@ -191,6 +200,7 @@
           <div class="col-lg-4 col-md-6">
             <div
               class="card text-dark border border-dark shadow shadow-dark mt-5"
+              id="card3"
             >
               <div class="card-header text-center py-4">
                 <i class="fas fa-chart-pie fa-5x"></i>
@@ -206,7 +216,9 @@
                 </p>
               </div>
               <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
+                <a class="btn btn-outline-primary btn-block text-left"
+                data-toggle="modal"
+                data-target="#data-modal-3"
                   >Learn More</a
                 >
               </div>
@@ -216,9 +228,10 @@
         <div class="row pt-1" id="rowTwo">
           <div class="col-lg-4 col-md-6">
             <div
-              class="card text-dark border border-dark shadow shadow-dark my-5" id="card4"
+              class="card text-dark border border-dark shadow shadow-dark my-5"
+              id="card4"
             >
-              <div class="card-header text-center py-4" >
+              <div class="card-header text-center py-4">
                 <i class="fas fa-code fa-5x"></i>
               </div>
               <div class="card-body">
@@ -232,7 +245,9 @@
                 </p>
               </div>
               <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
+                <a class="btn btn-outline-primary btn-block text-left"
+                data-toggle="modal"
+                data-target="#data-modal-4"
                   >Learn More</a
                 >
               </div>
@@ -240,9 +255,10 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div
-              class="card text-dark border border-dark shadow shadow-dark my-5" id="card5"
+              class="card text-dark border border-dark shadow shadow-dark my-5"
+              id="card5"
             >
-              <div class="card-header text-center py-4" >
+              <div class="card-header text-center py-4">
                 <i class="fas fa-database fa-5x"></i>
               </div>
               <div class="card-body">
@@ -258,7 +274,9 @@
                 </p>
               </div>
               <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
+                <a class="btn btn-outline-primary btn-block text-left"
+                data-toggle="modal"
+                data-target="#data-modal-5"
                   >Learn More</a
                 >
               </div>
@@ -266,7 +284,8 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div
-              class="card text-dark border border-dark shadow shadow-dark my-5" id="card6"
+              class="card text-dark border border-dark shadow shadow-dark my-5"
+              id="card6"
             >
               <div class="card-header text-center py-4">
                 <i class="fas fa-laptop fa-5x"></i>
@@ -282,7 +301,9 @@
                 </p>
               </div>
               <div class="p-3">
-                <a href="#" class="btn btn-outline-primary btn-block text-left"
+                <a class="btn btn-outline-primary btn-block text-left"
+                data-toggle="modal"
+                data-target="#data-modal-6"
                   >Learn More</a
                 >
               </div>
@@ -298,7 +319,7 @@
       <div class="my-skills-overlay">
         <div class="container">
           <div class="row py-5 m-auto">
-            <div class="col-sm-6 p-5">
+            <div class="col-sm-6 p-5 fadeInLeft">
               <h1>My Skills</h1>
               <p class="lead py-3">
                 In this day and age having a wide variety of skills in your tool
@@ -308,7 +329,7 @@
                 methods to learn new skills.
               </p>
             </div>
-            <div class="col-sm-6 d-flex flex-column p-5">
+            <div class="col-sm-6 d-flex flex-column p-5 fadeInRight">
               <div class="d-flex justify-content-between py-3">
                 <h3 style="min-width:130px;">Javascript</h3>
                 <i class="fas fa-star p-2"></i> <i class="fas fa-star p-2"></i>
@@ -360,15 +381,17 @@
         </div>
         <div class="row  m-auto">
           <div class="col-sm-12">
-            <a href="#" class="btn btn-outline-primary active m-3">All</a>
-            <a href="#" class="btn btn-outline-primary m-3">Design</a>
-            <a href="#" class="btn btn-outline-primary m-3">Development</a>
-            <a href="#" class="btn btn-outline-primary m-3">Scripts</a>
+            <a class="btn btn-outline-primary active m-3" id="all">All</a>
+            <a class="btn btn-outline-primary m-3" id="design">Design</a>
+            <a class="btn btn-outline-primary m-3" id="development"
+              >Development</a
+            >
+            <a class="btn btn-outline-primary m-3" id="scripts">Scripts</a>
           </div>
         </div>
-        <div class="row d-flex justify-content-center mt-5">
+        <div class="row d-flex justify-content-center mt-5" id="row1">
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left development">
               <img
                 src="./img/project1.jpg"
                 alt="project1"
@@ -392,7 +415,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left scripts">
               <img
                 src="./img/project2.jpeg"
                 alt="project2"
@@ -416,7 +439,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left design">
               <img
                 src="./img/project3.jpeg"
                 alt="project3"
@@ -440,9 +463,9 @@
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-center mt-5">
+        <div class="row d-flex justify-content-center mt-5" id="row2">
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left design">
               <img
                 src="./img/project4.jpeg"
                 alt="project4"
@@ -466,7 +489,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left development">
               <img
                 src="./img/project5.jpg"
                 alt="project5"
@@ -490,7 +513,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-left">
+            <div class="card text-left scripts">
               <img
                 src="./img/project6.jpeg"
                 alt="project6"
@@ -635,7 +658,9 @@
                 <span class="font-weight-bold">Jason MacCuaig</span> 01.05.2019
               </div>
               <div class="card-body text-left pt-2">
-                <h5 class="card-title ">My Journey to Learn Programming</h5>
+                <h5 class="card-title ">
+                  Learning Programming: My Journey This Far.
+                </h5>
                 <p class="card-text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Totam consectetur est voluptas qui dignissimos veniam possimus
@@ -759,6 +784,145 @@
       </div>
     </footer>
 
+
+    <!-- LEARN MORE MODAL: DATA ANALYTICS -->
+    <div class="modal fade" id="data-modal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center">
+          <div class="modal-header bg-light text-dark m-auto">
+            <div class="modal-title">
+              <img src="./img/project1.jpg" class="img img-fluid rounded">
+              <h3 class="pt-3">Data Analytics</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEARN MORE MODAL: CORPORATE ACCOUNTING-->
+    <div class="modal fade" id="data-modal-2">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content text-center">
+            <div class="modal-header bg-light text-dark m-auto">
+              <div class="modal-title">
+                <img src="./img/showcase1.jpg" class="img img-fluid rounded">
+                <h3 class="pt-3">Corporate Accounting</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+  
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- LEARN MORE MODAL: FINANCIAL MODELLING-->
+    <div class="modal fade" id="data-modal-3">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content text-center">
+            <div class="modal-header bg-light text-dark m-auto">
+              <div class="modal-title">
+                <img src="./img/background2.jpg" class="img img-fluid rounded">
+                <h3 class="pt-3">Financial Modelling</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+  
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              <!-- LEARN MORE MODAL: PROGRAMMING-->
+              <div class="modal fade" id="data-modal-4">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content text-center">
+                      <div class="modal-header bg-light text-dark m-auto">
+                        <div class="modal-title">
+                          <img src="./img/project2.jpeg" class="img img-fluid rounded">
+                          <h3 class="pt-3">Programming</h3>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+            
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- LEARN MORE MODAL: BUSINESS INTELLIGENCE-->
+              <div class="modal fade" id="data-modal-5">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content text-center">
+                      <div class="modal-header bg-light text-dark m-auto">
+                        <div class="modal-title">
+                          <img src="./img/project4.jpeg" class="img img-fluid rounded">
+                          <h3 class="pt-3">Business Intelligence</h3>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+            
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- LEARN MORE MODAL: WEB DEVELOPMENT-->
+              <div class="modal fade" id="data-modal-6">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content text-center">
+                      <div class="modal-header bg-light text-dark m-auto">
+                        <div class="modal-title">
+                          <img src="./img/project5.jpg" class="img img-fluid rounded">
+                          <h3 class="pt-3">Web Development</h3>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti rerum nam impedit. Earum non, assumenda cupiditate beatae exercitationem placeat modi minus nesciunt quisquam delectus, atque, odio voluptas magni rem dolor enim eaque eligendi eos quidem voluptatibus ullam! Commodi, obcaecati enim? Vel atque, voluptatem amet sit nostrum odio velit cupiditate.</p>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut, numquam esse neque voluptas nostrum iusto, ipsam, soluta aliquam officia sint nam quaerat illo accusantium. Libero perspiciatis veniam ducimus, sed voluptates quisquam, officiis labore cumque iste quidem in fugit praesentium nihil. Incidunt nesciunt sapiente commodi eveniet fuga, asperiores esse modi?</p>
+            
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -774,6 +938,7 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
     <script>
       // Get the current year for the copyright
@@ -806,17 +971,77 @@
         if ($(window).scrollTop() >= $("#about").offset().top - 600) {
           $("#about").addClass("fadeIn");
         }
-        if ($(window).scrollTop() >= $("#services").offset().top - 600){
-          $("#card1").delay(500).fadeIn(1000); 
-          $("#card2").delay(1000).fadeIn(1000); 
-          $("#card3").delay(1500).fadeIn(1000);                   
+        if ($(window).scrollTop() >= $("#services").offset().top - 600) {
+          $("#card1")
+            .delay(500)
+            .fadeIn(1000);
+          $("#card2")
+            .delay(1000)
+            .fadeIn(1000);
+          $("#card3")
+            .delay(1500)
+            .fadeIn(1000);
         }
-        if ($(window).scrollTop() >= $("#services").offset().top + 100){
-          $("#card4").delay(500).fadeIn(1000); 
-          $("#card5").delay(1000).fadeIn(1000); 
-          $("#card6").delay(1500).fadeIn(1000); 
+        if ($(window).scrollTop() >= $("#services").offset().top + 100) {
+          $("#card4")
+            .delay(500)
+            .fadeIn(1000);
+          $("#card5")
+            .delay(1000)
+            .fadeIn(1000);
+          $("#card6")
+            .delay(1500)
+            .fadeIn(1000);
         }
       });
+
+      var tag = "all";
+
+      $("#projects .btn").on("click", function() {
+        $("#projects .btn").removeClass("active");
+        tag = this.id;
+        $(this).addClass("active");
+
+        $("#projects")
+          .find(`.card`)
+          .each(function(card) {
+            if ($(this).hasClass(`${tag}`)) {
+              $(this).hide();
+              $(this)
+                .fadeIn(1500)
+                .show();
+            } else if (tag === "all") {
+              $(this)
+                .fadeIn(1500)
+                .show();
+            } else {
+              $(this)
+                .hide()
+                .fadeOut(500);
+            }
+          });
+      });
+
+      var typedHeader1 = new Typed('#typedHeader1', {
+                            strings: ["Hey! I'm Jason", "I'm a Technical Accountant From London, ON, Canada", 'and this is my page', 'Enjoy!'], 
+                            typeSpeed: 20, 
+                            backSpeed: 20,
+                            backDelay: 1000, 
+                            onComplete: (self) => {
+                              $('#typedHeader1').delay(1000).fadeOut(1000); 
+                              $('.typed-cursor').delay(1000).fadeOut(1000);  
+
+                             
+                              $('#headerArea').delay(2000).fadeIn(1000).append(`
+                              <div class="display-3">Jason MacCuaig</div>
+                              <div class="lead pb-2">Technical Accountant</div>
+                              <p>London, ON, Canada</p>
+                              `)
+
+                            }
+                          });
+              
+      
     </script>
   </body>
 </html>
