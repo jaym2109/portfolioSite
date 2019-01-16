@@ -1,5 +1,5 @@
 * {
-  font-family: "Karla", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 #showcase {
@@ -11,6 +11,7 @@
 }
 #headerArea {
   display: none;
+  margin-top: 30px;
 }
 
 #about {
@@ -23,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(233, 236, 229, 0.8);
 }
 .dark-overlay {
   position: absolute;
@@ -31,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(59, 58, 54, 0.9);
 }
 
 .my-skills-overlay {
@@ -103,32 +104,20 @@
   margin-top: 75px;
 }
 
-/* #rowTwo {
-  opacity: 0;
-} */
-
-#card1 {
-  display: none;
+.bg-light-01 {
+  background: #e9ece5;
 }
 
-#card2 {
-  display: none;
+.bg-first {
+  background: #b3c2bf;
 }
 
-#card3 {
-  display: none;
+.bg-second {
+  background: #c0dfd9;
 }
 
-#card4 {
-  display: none;
-}
-
-#card5 {
-  display: none;
-}
-
-#card6 {
-  display: none;
+.bg-dark-01 {
+  background: #3b3a36;
 }
 
 .fadeInLeft {
@@ -180,5 +169,21 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #showcase {
+    height: 60vh;
+  }
+
+  #headerArea {
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 600px) {
+  #headerArea {
+    margin-top: 100px;
   }
 }
